@@ -13,7 +13,8 @@ We need to have node and npm installed in your machine
 4. Type npm start to start the project.
 
 ### Note 
-You must use the Search Terms only as advised by udacity.
+You must use the Search Terms only as advised by udacity. you can find
+it here: https://github.com/nasserfj58/Bookshelf/blob/master/SEARCH_TERMS.md
 
 
 
