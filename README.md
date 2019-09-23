@@ -5,7 +5,7 @@ the book can move from one shelf to other, and you can add more books by the sea
 ### Prerequisites:
 We need to have node and npm installed in your machine
 
-To Use this Project you need to:
+### To Use this Project you need to:
 
 1. Clone or download the project to your machine.
 2. In your termenal go to project folder.
