@@ -13,8 +13,12 @@ We need to have node and npm installed in your machine
 4. Type npm start to start the project.
 
 ### Note 
-You must use the Search Terms only as advised by udacity. you can find
+
+1. You must use the Search Terms only as advised by udacity. you can find
 it here: https://github.com/nasserfj58/Bookshelf/blob/master/SEARCH_TERMS.md
+
+2. The style and some of the code that used in here is from udacity myreacds starter repo:
+https://github.com/udacity/reactnd-project-myreads-starter
 
 ### References
 https://love2dev.com/blog/javascript-remove-from-array/
@@ -22,7 +26,7 @@ https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array
 https://www.youtube.com/watch?v=8BNdxFzMeVg
 https://www.youtube.com/watch?v=nmbX2QL7ZJc
 https://stackoverflow.com/questions/50235503/pass-function-by-props-in-react-router
-
+https://github.com/udacity/reactnd-project-myreads-starter
 
 
 
