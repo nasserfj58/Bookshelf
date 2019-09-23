@@ -10,6 +10,7 @@ We need to have node and npm installed in your machine
 1. Clone or download the project to your machine.
 2. In your termenal go to project folder.
 3. Type npm install to downlad all nedded dependinces.
+4. Type npm start to start the project.
 
 ### Note 
 You must use the Search Terms only as advised by udacity.
