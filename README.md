@@ -16,6 +16,12 @@ We need to have node and npm installed in your machine
 You must use the Search Terms only as advised by udacity. you can find
 it here: https://github.com/nasserfj58/Bookshelf/blob/master/SEARCH_TERMS.md
 
+### References
+https://love2dev.com/blog/javascript-remove-from-array/
+https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array
+https://www.youtube.com/watch?v=8BNdxFzMeVg
+https://www.youtube.com/watch?v=nmbX2QL7ZJc
+https://stackoverflow.com/questions/50235503/pass-function-by-props-in-react-router
 
 
 
