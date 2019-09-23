@@ -1,5 +1,5 @@
 import React from 'react'
-import {getAll, update } from './BooksAPI'
+import { getAll, update } from './BooksAPI'
 import { Link } from 'react-router-dom'
 import './App.css'
 import BookShelf from './BookShelf';
@@ -19,24 +19,21 @@ class BooksApp extends React.Component {
     this._isMounted = false;
   }
   changeShelf = (book, shelf) => {
-    
-    if(book.shelf === shelf || !shelf)
-    return;
+
+    if (book.shelf === shelf || !shelf)
+      return;
 
     update(book, shelf);
 
-   // For Unmounted Copmonent Warrning Issue
-   if (this._isMounted) {
-     // Make sure that old book have new desired shelf
+    // For Unmounted Copmonent Warrning Issue
+    if (this._isMounted) {
+      // Make sure that old book have new desired shelf
       book.shelf = shelf;
       //Remove Old Book and add the new shelf book
       this.setState(oldState => ({
-        books: oldState
-          .books
-          .filter(b => b.id !== book.id)
-          .concat(book)
+        books: oldState.books.filter(b => b.id !== book.id).concat(book)
       }))
-   }
+    }
   }
 
   render() {
