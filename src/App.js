@@ -27,7 +27,9 @@ class BooksApp extends React.Component {
 
    // For Unmounted Copmonent Warrning Issue
    if (this._isMounted) {
+     // Make sure that old book have new desired shelf
       book.shelf = shelf;
+      //Remove Old Book and add the new shelf book
       this.setState(oldState => ({
         books: oldState
           .books
