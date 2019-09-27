@@ -25,7 +25,7 @@ class Search extends React.Component {
 
     }
     render() {
-        const shelfBooks = this.props.location.shelfBooks;
+
         return (<div className="search-books">
             <div className="search-books-bar">
                 <Link to='/' className="close-search" />
