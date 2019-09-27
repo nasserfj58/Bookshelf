@@ -34,8 +34,6 @@ class Search extends React.Component {
                 </div>
             </div>
             <div className="search-books-results">
-               
-                {console.log(shelfBooks.find(y=>y.shelf !== "none"))}
                 <ol className="books-grid">
                     {
                         
