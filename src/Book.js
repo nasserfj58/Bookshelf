@@ -6,7 +6,7 @@ function Book(props) {
             <div className="book-top">
                 <div className="book-cover" style={{ width: 128, height: 188, backgroundImage: `url(${props.BookDetails && props.BookDetails.imageLinks && props.BookDetails.imageLinks.thumbnail})` }}></div>
                 <div className="book-shelf-changer">
-                    <select  onChange={(event)=>{props.ChangeShelf(props.BookDetails,event.target.value)}}>
+                    <select value={props.BookDetails && props.BookDetails.shelf ? props.BookDetails.shelf : "none" } onChange={(event)=>{props.ChangeShelf(props.BookDetails,event.target.value)}}>
                         <option value="">Move to...</option>
                         <option value="currentlyReading">Currently Reading</option>
                         <option value="wantToRead">Want to Read</option>

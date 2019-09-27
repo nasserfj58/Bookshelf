@@ -7,10 +7,16 @@ class Search extends React.Component {
     state = {
         searchedBooks: []
     }
+
+    shelfHasBook(id){
+        let shelfBooks = this.props.location.shelfBooks;
+        return shelfBooks && shelfBooks.find(book => book.id === id && book.shelf !== 'none')
+    }
+    
     getFilteredBooks = (query) => {
         if (query)
             search(query.trim()).then(books => this.setState((oldState) => ({
-                searchedBooks: !books || books.error ? [] : books
+                searchedBooks: !books || books.error ? [] : books.filter(x=>!this.shelfHasBook(x.id))
             })));
         else
             this.setState((oldState) => ({
@@ -19,6 +25,7 @@ class Search extends React.Component {
 
     }
     render() {
+        const shelfBooks = this.props.location.shelfBooks;
         return (<div className="search-books">
             <div className="search-books-bar">
                 <Link to='/' className="close-search" />
@@ -27,8 +34,11 @@ class Search extends React.Component {
                 </div>
             </div>
             <div className="search-books-results">
+               
+                {console.log(shelfBooks.find(y=>y.shelf !== "none"))}
                 <ol className="books-grid">
                     {
+                        
                         this.state.searchedBooks.map((book) => {
                             return <li key={book.id}>
                                 <Book

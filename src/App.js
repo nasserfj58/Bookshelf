@@ -51,7 +51,7 @@ class BooksApp extends React.Component {
             </div>
           </div>
           <div className="open-search">
-            <Link to={{ pathname: '/search', ChangeShelf: this.changeShelf }}>
+            <Link to={{ pathname: '/search', ChangeShelf: this.changeShelf, shelfBooks : this.state.books }}>
               <button>
                 Add A Book
             </button>
